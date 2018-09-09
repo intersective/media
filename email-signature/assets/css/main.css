@@ -1,0 +1,63 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #F5F6FA;
+  padding: 0 8px;
+  font-size: 1.2rem;
+}
+
+a {
+  color: #2BC1D9;
+  text-decoration: none;
+}
+
+.mail {
+  background-color: white;
+  box-sizing: border-box;
+  max-width: 800px;
+  padding: 48px 24px 32px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.12), 0 15px 12px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  margin: -32px auto 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.mail h1 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #AFB5D2;
+}
+
+.instructions {
+  line-height: 1.6rem;
+  margin-bottom: 48px;
+}
+
+.tool {
+  max-width: 600px;
+  padding: 48px 32px 48px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #2BC1D9;
+  height: 48px;
+  padding: 0 24px;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  width: 320px;
+  border-radius: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
