@@ -1,0 +1,2 @@
+# media
+Public media assets 
