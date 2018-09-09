@@ -20,8 +20,30 @@
 
   // Copy to Clipboard
   var markupContainer = document.querySelector('.signature');
-  var copyButton = document.querySelector('#copy-button');
-  copyButton
+  var copyTextButton = document.querySelector('#copy-text-button');
+  var copyHtmlButton = document.querySelector('#copy-button');
+  copyTextButton
+    .addEventListener('click', function () {
+      var sigHtml = markupContainer.innerHTML;
+      // Copy to clipboard
+      copyToClipboard(sigHtml, {
+        asHtml: false
+      });
+      // Store values
+      store.set('user', {
+        name: nameField.innerHTML,
+        position: positionField.innerHTML,
+        phone: phoneField.innerHTML,
+        email: emailField.innerHTML
+      });
+      // Change button label
+      var copyButtonLabel = copyButton.innerHTML;
+      copyButton.innerHTML = "Copied!";
+      setTimeout(function() {
+        copyButton.innerHTML = copyButtonLabel;
+      }, 2000);
+    });
+  copyHtmlButton
     .addEventListener('click', function () {
       var sigHtml = markupContainer.innerHTML;
       // Copy to clipboard
