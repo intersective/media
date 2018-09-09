@@ -37,10 +37,10 @@
         email: emailField.innerHTML
       });
       // Change button label
-      var copyButtonLabel = copyButton.innerHTML;
-      copyButton.innerHTML = "Copied!";
+      var copyTextButtonLabel = copyTextButton.innerHTML;
+      copyTextButton.innerHTML = "Copied!";
       setTimeout(function() {
-        copyButton.innerHTML = copyButtonLabel;
+        copyTextButton.innerHTML = copyTextButtonLabel;
       }, 2000);
     });
   copyHtmlButton
@@ -58,10 +58,10 @@
         email: emailField.innerHTML
       });
       // Change button label
-      var copyButtonLabel = copyButton.innerHTML;
-      copyButton.innerHTML = "Copied!";
+      var copyHtmlButtonLabel = copyHtmlButton.innerHTML;
+      copyHtmlButton.innerHTML = "Copied!";
       setTimeout(function() {
-        copyButton.innerHTML = copyButtonLabel;
+        copyHtmlButton.innerHTML = copyHtmlButtonLabel;
       }, 2000);
     });
 
