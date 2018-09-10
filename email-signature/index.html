@@ -1,6 +1,9 @@
 <!doctype html>
 <html>
   <head>
+    <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<![endif]-->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     <title>Practera Email Signature Tool</title>
   </head>
@@ -75,8 +78,11 @@
 
     <div class="tool">
       <div>Copy Signature to Clipboard:</div>
-      <button class="btn" id="copy-button">Copy as HTML</button> <button class="btn" id="copy-text-button">Copy as Text</button>
+      <button class="btn" id="copy-button">Copy as HTML</button>
+      <button class="btn" id="copy-text-button" style="display:none;">Copy as Text</button>
     </div>
+
+    <div class="backdrop"></div>
 
     <script src="assets/js/store.modern.min.js"></script>
     <script src="assets/js/clipboard.js"></script>
