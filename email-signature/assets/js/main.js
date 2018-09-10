@@ -20,9 +20,9 @@
 
   // Copy to Clipboard
   var markupContainer = document.querySelector('.signature');
-  var copyTextButton = document.querySelector('#copy-text-button');
-  var copyHtmlButton = document.querySelector('#copy-button');
-  copyTextButton
+  var copyRawButton = document.querySelector('#copy-raw-button');
+  var copyHtmlButton = document.querySelector('#copy-html-button');
+  copyRawButton
     .addEventListener('click', function () {
       var sigHtml = markupContainer.innerHTML;
       // Copy to clipboard
@@ -37,10 +37,10 @@
         email: emailField.innerHTML
       });
       // Change button label
-      var copyTextButtonLabel = copyTextButton.innerHTML;
-      copyTextButton.innerHTML = "Copied!";
+      var copyRawButtonLabel = copyRawButton.innerHTML;
+      copyRawButton.innerHTML = "Copied!";
       setTimeout(function() {
-        copyTextButton.innerHTML = copyTextButtonLabel;
+        copyRawButton.innerHTML = copyRawButtonLabel;
       }, 2000);
     });
   copyHtmlButton
